@@ -5,21 +5,22 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  Home: / || fa fa-home
-  Archives: /archives/ || fa fa-archive
-  Tags: /tags/ || fa fa-tags
-  Categories: /categories/ || fa fa-folder-open
-  Link: /link/ || fa fa-link
-  About: /about/ || fa fa-heart
-  List||fa fa-list:
-    - Music || /music/ || fa fa-music
-    - Movie || /movies/ || fa fa-film
+  首页: / || fa fa-home
+  标签: /tags/ || fa fa-tags
+  分类: /categories/ || fa fa-folder-open
+  留言板: /message/ || fa fa-coffee
+  时间轴: /archives/ || fa fa-archive
+  # Link: /link/ || fa fa-link
+  # About: /about/ || fa fa-heart
+  # List||fa fa-list:
+    # - Music || /music/ || fa fa-music
+    # - Movie || /movies/ || fa fa-film
 
 # Favicon
 # ---------------
 favicon: /img/favicon.ico
 
-#  
+# PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
 # pwa:
@@ -49,12 +50,12 @@ copy:
 
 # social settings
 # formal:
-#   icon: link
+#   icon: link || the description
 # ---------------
 social:
   fa fa-github: https://github.com/Zimomo333
   fa fa-envelope: mailto:lzh120908717@gmail.com
-  fa fa-rss: /atom.xml
+  fa fa-rss: /atom.xml || RSS
 
 ####    search    ####
 # Algolia search
@@ -70,16 +71,16 @@ algolia_search:
     hits_stats: "${hits} results found in ${time} ms"
 
 # Local search
-# Please see doc for more details: https://jerryc.me/posts/21cfbf15/#本地搜索
+# Please see doc for more details: https://docs.jerryc.me/config.html#本地搜索
 # ---------------
 local_search:
-  enable: false
+  enable: true
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
 
 # MathJax
-# Please see doc for more details: https://jerryc.me/posts/21cfbf15/#MathJax
+# Please see doc for more details: https://docs.jerryc.me/config.html#mathjax
 # ---------------
 mathjax:
   enable: false
@@ -168,9 +169,12 @@ post_meta:
     categories: true # true or false 文章頁是否顯示分類
     tags: true # true or false 文章頁是否顯示標籤
 
-# Please see doc for more details: https://jerryc.me/posts/21cfbf15/#字數統計
+# Please see doc for more details: https://docs.jerryc.me/config.html#字數統計
 wordcount:
   enable: false
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
 
 toc:
   enable: true
@@ -313,6 +317,13 @@ google_adsense:
   client:
   enable_page_level_ads: true
 
+# 廣告插入位置
+# 適用於開啓手動廣告的配置
+# ad:
+#   index:
+#   aside:
+#   post:
+
 ####    站長驗證    ####
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -347,26 +358,30 @@ related_post:
   limit: 6 # 顯示推薦文章數目
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
+# figcaption
+# 圖片描述文字
+photofigcaption: false
+
 ####    美化/效果    ####
 #--------------------------------
 
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 # ---------------
-# theme_color:
-#   enable: true
-#   main: "#49B1F5"
-#   paginator: "#00c4b6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00c4b6"
-#   link_color: "#99a9bf"
-#   meta_color: "#858585"
-#   hr_color: "#A4D8FA"
-#   code_foreground: "#F47466"
-#   code_background: "rgba(27, 31, 35, .05)"
-#   toc_color: "#00c4b6"
-#   blockquote_padding_color: "#49b1f5"
-#   blockquote_background_color: "#49b1f5"
+theme_color:
+  enable: true
+  main: "#99CC66"
+  paginator: "#99CC66"
+  button_hover: "#FFCC00"
+  text_selection: "#00c4b6"
+  link_color: "#99a9bf"
+  meta_color: "#858585"
+  hr_color: "#A4D8FA"
+  code_foreground: "#F47466"
+  code_background: "rgba(27, 31, 35, .05)"
+  toc_color: "#00c4b6"
+  blockquote_padding_color: "#99CC66"
+  blockquote_background_color: "#99CC66"
 
 # 主頁設置
 # 默認top_img全屏，site_info在中間
@@ -512,7 +527,7 @@ aside:
 
 # 網站公告
 announcement:
-  content: 感谢访问本站，若喜欢请收藏 (●'◡'●)
+  content: 感谢访问本站，欢迎留言，若喜欢请收藏 (●'◡'●)
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -526,13 +541,13 @@ busuanzi:
 # 也可以寫成 年/月/日 時間
 runtimeshow:
   enable: true
-  start_date: 6/7/2018 00:00:00
+  start_date: 3/31/2020 00:00:00
 
 ####   右下角按鈕  ####
 #----------------------------------------------
 # 簡繁轉換
 translate:
-  enable: true
+  enable: false
   # 默認按鈕顯示文字
   default: 繁
   #網站默認語言，1: 繁體中文, 2: 簡體中文
@@ -559,7 +574,7 @@ darkmode:
   # autoChangeMode: 1  跟隨系統而變化，不支持的瀏覽器/系統將按照時間晚上6點到早上6點之間切換為 dark mode
   # autoChangeMode: 2  只按照時間晚上6點到早上6點之間切換為 dark mode
   # autoChangeMode: false 取消自動切換
-  autoChangeMode: false
+  autoChangeMode: 1
 
 ####    other     ####
 #------------------------------------------------

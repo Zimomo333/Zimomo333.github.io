@@ -103,3 +103,9 @@ deploy:
     github: https://github.com/Zimomo333/Zimomo333.github.io.git
     gitblit: http://zimomo@139.9.182.180:12090/r/hexo.git
   branch: master
+ 
+# Local Search
+search:
+  path: search.xml
+  field: post
+  content: true
