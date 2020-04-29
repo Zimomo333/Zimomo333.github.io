@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: www.zimomo333.com
+url: zimomo333.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -96,15 +96,18 @@ ignore:
 theme: Butterfly
 
 # Deployment
-## Docs: https://hexo.io/docs/deployment.html
+# Docs: https://hexo.io/docs/deployment.html
+# deploy:
+  # type: git
+  # repo: zimomo@139.9.182.180:/home/zimomo/repos/blog.git
+  # branch: master
+
 deploy:
   type: git
   repo: https://github.com/Zimomo333/Zimomo333.github.io.git
-  # repository:
-    # github: https://github.com/Zimomo333/Zimomo333.github.io.git
-    # gitblit: http://zimomo@139.9.182.180:12090/r/hexo.git
   branch: master
- 
+
+
 # Local Search
 search:
   path: search.xml

@@ -41,7 +41,7 @@ JRE 官方下载地址（注册后才能下载）： https://www.oracle.com/java
 
 ##### 官网下载Windows版压缩包：http://gitblit.github.io/gitblit/
 
-<img src="hexo_windows/Gitblit.JPG" style="zoom:70%;" />
+<img src="Gitblit.JPG" style="zoom:70%;" />
 
 
 
@@ -67,7 +67,7 @@ server.httpBindInterface =
 
 即可进入Gitblit使用界面
 
-![](hexo_windows/gitblit_cmd.JPG)
+![](gitblit_cmd.JPG)
 
 
 
@@ -84,7 +84,7 @@ SET CD=C:\Program Files\gitblit-1.9.0
 --StartParams="" ^
 ```
 
-<img src="hexo_windows/installService.JPG" style="zoom:70%;" />
+<img src="installService.JPG" style="zoom:70%;" />
 
 
 
@@ -96,11 +96,11 @@ SET CD=C:\Program Files\gitblit-1.9.0
 
 
 
-<img src="hexo_windows/gitblit_service.JPG" alt="image-20200405011845990" style="zoom:80%;" />
+<img src="gitblit_service.JPG" alt="image-20200405011845990" style="zoom:80%;" />
 
 
 
-<img src="hexo_windows/gitblit_service2.JPG" alt="image-20200406012825794" style="zoom:80%;" />
+<img src="gitblit_service2.JPG" alt="image-20200406012825794" style="zoom:80%;" />
 
 
 
@@ -110,7 +110,7 @@ SET CD=C:\Program Files\gitblit-1.9.0
 
 初始账号：admin，初始密码：admin
 
-![](hexo_windows/gitblit_login.JPG)
+![](gitblit_login.JPG)
 
 
 
@@ -120,7 +120,7 @@ SET CD=C:\Program Files\gitblit-1.9.0
 
 
 
-![](hexo_windows/gitblit_password.JPG)
+![](gitblit_password.JPG)
 
 
 
@@ -128,7 +128,7 @@ SET CD=C:\Program Files\gitblit-1.9.0
 
 仓库名自定义，无需像托管在Github上时一样规定为username.github.io
 
-<img src="hexo_windows/gitblit_create.JPG" alt="image-20200403212807119" style="zoom:60%;" />
+<img src="gitblit_create.JPG" alt="image-20200403212807119" style="zoom:60%;" />
 
 
 
@@ -138,7 +138,7 @@ SET CD=C:\Program Files\gitblit-1.9.0
 
 想要用ssh的，劳烦移步官网文档 http://gitblit.github.io/gitblit/setup_transport_ssh.html
 
-<img src="hexo_windows/gitblit_repository.jpg" alt="image-20200403212807119" style="zoom:80%;" />
+<img src="gitblit_repository.jpg" alt="image-20200403212807119" style="zoom:80%;" />
 
 
 
@@ -153,7 +153,7 @@ SET CD=C:\Program Files\gitblit-1.9.0
 
 官网下载Windows版压缩包：http://nginx.org/en/download.html
 
-<img src="hexo_windows/nginx_download.JPG" alt="image-20200405013330255" style="zoom:70%;" />
+<img src="nginx_download.JPG" alt="image-20200405013330255" style="zoom:70%;" />
 
 
 
@@ -161,7 +161,7 @@ SET CD=C:\Program Files\gitblit-1.9.0
 
 修改Nginx 根目录的conf文件夹下的配置文件  `C:\Program Files\nginx-1.17.9\conf\nginx.conf`
 
-<img src="hexo_windows/nginx_conf.JPG" alt="image-20200406014354829" style="zoom:80%;" />
+<img src="nginx_conf.JPG" alt="image-20200406014354829" style="zoom:80%;" />
 
 
 
@@ -171,7 +171,7 @@ SET CD=C:\Program Files\gitblit-1.9.0
 
 访问测试页面 `http://localhost/`
 
-<img src="hexo_windows/nginx_test.JPG" alt="image-20200406013403238" style="zoom:90%;" />
+<img src="nginx_test.JPG" alt="image-20200406013403238" style="zoom:90%;" />
 
 
 
@@ -212,17 +212,17 @@ WinSW.NET4.exe （适用于64位系统。我下载这个版本）
 
 请自行修改<logpath>、<executable>、<stopexecutable>为自己的Nginx 根目录
 
-<img src="hexo_windows/nginx_service.JPG" alt="image-20200406011927319" style="zoom:90%;" />
+<img src="nginx_service.JPG" alt="image-20200406011927319" style="zoom:90%;" />
 
 
 
 ###### 用 **管理员身份** 运行 cmd ，cd 进入 `C:\Program Files\nginx-1.17.9` Nginx 根目录下，执行 `nginxservice.exe install` 命令。
 
-![image-20200406012420521](hexo_windows/nginx_service2.JPG)
+![image-20200406012420521](nginx_service2.JPG)
 
 
 
-<img src="hexo_windows/nginx_service3.JPG" alt="image-20200406012538546" style="zoom:80%;" />
+<img src="nginx_service3.JPG" alt="image-20200406012538546" style="zoom:80%;" />
 
 
 
@@ -242,7 +242,7 @@ WinSW.NET4.exe （适用于64位系统。我下载这个版本）
 
 　　你需要在服务器上，像平时克隆仓库一样执行　git clone 仓库地址　才能获取到推送的文件。
 
-![image-20200404022142918](hexo_windows/git_file.jpg)
+![image-20200404022142918](git_file.jpg)
 
 　　我们要配置的钩子脚本就是要实现以上功能，而且并不需要额外安装 Git。
 
@@ -269,7 +269,7 @@ def rootFolder = 'C:/Program Files/nginx-1.17.9/html/'
 
 选择刚才编写的autoclone脚本，保存
 
-<img src="hexo_windows/git_script.JPG" alt="image-20200404025524747" style="zoom:70%;" />
+<img src="git_script.JPG" alt="image-20200404025524747" style="zoom:70%;" />
 
 
 
@@ -296,4 +296,4 @@ deploy:
 
 
 
-<img src="hexo_windows/myblog.JPG" alt="image-20200406020350893" style="zoom:60%;" />
+<img src="myblog.JPG" alt="image-20200406020350893" style="zoom:60%;" />
