@@ -138,7 +138,7 @@ SET CD=C:\Program Files\gitblit-1.9.0
 
 想要用ssh的，劳烦移步官网文档 http://gitblit.github.io/gitblit/setup_transport_ssh.html
 
-<img src="gitblit_repository.jpg" alt="image-20200403212807119" style="zoom:80%;" />
+<img src="gitblit_repository.JPG" alt="image-20200403212807119" style="zoom:80%;" />
 
 
 
@@ -216,7 +216,7 @@ WinSW.NET4.exe （适用于64位系统。我下载这个版本）
 
 
 
-###### 用 **管理员身份** 运行 cmd ，cd 进入 `C:\Program Files\nginx-1.17.9` Nginx 根目录下，执行 `nginxservice.exe install` 命令。
+用 **管理员身份** 运行 cmd ，cd 进入 `C:\Program Files\nginx-1.17.9` Nginx 根目录下，执行 `nginxservice.exe install` 命令。
 
 ![image-20200406012420521](nginx_service2.JPG)
 
@@ -242,7 +242,7 @@ WinSW.NET4.exe （适用于64位系统。我下载这个版本）
 
 　　你需要在服务器上，像平时克隆仓库一样执行　git clone 仓库地址　才能获取到推送的文件。
 
-![image-20200404022142918](git_file.jpg)
+![](git_file.JPG)
 
 　　我们要配置的钩子脚本就是要实现以上功能，而且并不需要额外安装 Git。
 
