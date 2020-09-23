@@ -112,3 +112,7 @@ search:
   path: search.xml
   field: post
   content: true
+  
+# hexo sitemap网站地图
+baidusitemap:
+  path: baidusitemap.xml
